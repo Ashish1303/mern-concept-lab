@@ -1,0 +1,59 @@
+{
+  "guard": "\"Account page\"",
+  "editedGuard": "\"Account page\"",
+  "changedGuard": "\"Edited account\"",
+  "syntaxError": true,
+  "reset": true,
+  "refresh": "\"Public home\"",
+  "answer": true,
+  "fallback": [
+    "- status \"Actual output\": \"\\\"Loading fallback\\\"\""
+  ],
+  "reveal": [
+    "- status \"Actual output\": \"\\\"New panel ready\\\"\""
+  ],
+  "retained": [
+    "- status \"Actual output\": \"\\\"Previous panel stays visible\\\"\""
+  ],
+  "transitionReveal": [
+    "- status \"Actual output\": \"\\\"New panel ready\\\"\""
+  ],
+  "history": true,
+  "profile": [
+    "      - log: \"[ { \\\"sequence\\\": 4, \\\"event\\\": \\\"Counter.commit\\\", \\\"value\\\": 1 }, { \\\"sequence\\\": 5, \\\"event\\\": \\\"profiler.render\\\", \\\"value\\\": { \\\"id\\\": \\\"Counter\\\", \\\"phase\\\": \\\"update\\\", \\\"actualDuration\\\": 0.7000000178813934, \\\"baseDuration\\\": 0.7000000178813934, \\\"startTime\\\": 42780.79999998212, \\\"commitTime\\\": 42781.90000000596 } } ]\"",
+    "    - paragraph: Counter.commit records the change. Profiling-enabled builds also record timings."
+  ],
+  "split": [
+    "- status \"Actual output\": \"\\\"Report loaded\\\"\""
+  ],
+  "splitPreview": "\"Report loaded\"",
+  "virtualRows": 5,
+  "virtualOutput": [
+    "- status \"Actual output\": \"{ \\\"firstVisible\\\": 5000, \\\"mounted\\\": 5, \\\"total\\\": 10000 }\""
+  ],
+  "scrollTop": 159968,
+  "redux": [
+    "- status \"Actual output\": \"{ \\\"quantity\\\": 1 }\""
+  ],
+  "reduxPreview": [
+    "- status \"Actual output\": \"{ \\\"quantity\\\": 1 }\"",
+    "- status \"Actual output\": \"{ \\\"quantity\\\": 1 }\""
+  ],
+  "api": [
+    "- status \"Actual output\": \"\\\"PASS: filtered API response\\\"\""
+  ],
+  "apiPreview": [
+    "- status \"Actual output\": \"\\\"PASS: filtered API response\\\"\"",
+    "- status \"Actual output\": \"\\\"PASS: filtered API response\\\"\""
+  ],
+  "developmentConsole": [],
+  "mobile": {
+    "layout": {
+      "document": 375,
+      "width": 390
+    },
+    "output": [
+      "- status \"Actual output\": \"{ \\\"firstVisible\\\": 5000, \\\"mounted\\\": 5, \\\"total\\\": 10000 }\""
+    ]
+  }
+}

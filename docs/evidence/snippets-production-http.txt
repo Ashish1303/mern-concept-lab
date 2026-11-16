@@ -1,0 +1,27 @@
+[
+  {
+    "path": "/learn/react/react-028?example=react-059.e01",
+    "status": 200,
+    "isolatedPreviewOrigin": true
+  },
+  {
+    "path": "/learn/typescript/typescript-001",
+    "status": 200,
+    "isolatedPreviewOrigin": true
+  },
+  {
+    "path": "/foundation",
+    "status": 200,
+    "isolatedPreviewOrigin": true
+  },
+  {
+    "checkedAt": "2026-11-08T07:49:53.212Z",
+    "previewCSP": true,
+    "noServerCodeExecutionEndpoint": true,
+    "noPreviewAPI": true,
+    "compilerDeclarationFiles": 302,
+    "compilerFixtures": 40,
+    "realAPI": true,
+    "testChunksAbsent": true
+  }
+]

@@ -1,0 +1,176 @@
+
+> mern-concept-lab@0.1.0 test
+> npm run check:types && npm run build:playground && npm run test --workspaces
+
+
+> mern-concept-lab@0.1.0 check:types
+> tsx scripts/check-type-examples.ts
+
+Verified 40 TypeScript fixtures, 40 negative cases; diagnostics and source hashes saved.
+
+> mern-concept-lab@0.1.0 build:playground
+> tsx scripts/build-playground.ts
+
+vite v8.3.6 building client environment for production...
+transforming...
+✓ 100 modules transformed.
+rendering chunks...
+computing gzip size...
+client/playground-dist/runtime.js  533.48 kB │ gzip: 169.59 kB
+
+[MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/react-router/dist/production/index.js" may not be preserved when bundling.
+    ╭─[ node_modules/react-router/dist/production/index.js:11:1 ]
+    │
+ 11 │ "use client";
+    │ ──────┬──────  
+    │       ╰──────── module level directive may not be preserved
+    │ 
+    │ Help: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+────╯
+
+✓ built in 622ms
+Prepared browser-only compiler assets (302 public source/declaration files) and isolated React preview.
+
+> @mern-concept-lab/client@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/client
+
+ ❯ src/modules/react/react-lessons.test.tsx (142 tests | 1 failed) 1209572ms
+   ❯ State, cleanup and modern Hook contracts (23)
+     × form Actions show actual pending, validation, HTTP failure and successful retry 1187343ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/modules/react/react-lessons.test.tsx > State, cleanup and modern Hook contracts > form Actions show actual pending, validation, HTTP failure and successful retry
+AssertionError: expected '{\n  "status": "Enter a name.",\n  "n…' to contain 'HTTP 503'
+
+Ignored nodes: comments, script, style
+<html>
+  <head />
+  <body>
+    <div>
+      <form
+        action="javascript:throw new Error('A React form was unexpectedly submitted. If you called form.submit() manually, consider using form.requestSubmit() instead. If you\\'re trying to use event.stopPropagation() in a submit event handler, consider also calling event.preventDefault().')"
+      >
+        <label>
+          Action name
+          <input
+            maxlength="40"
+            name="name"
+            value="Ada"
+          />
+        </label>
+        <label>
+          <input
+            name="fail"
+            type="checkbox"
+          />
+          Reject action request
+        </label>
+        <button
+          disabled=""
+        >
+          Submit action
+        </button>
+      </form>
+      <div
+        class="actual-output"
+      >
+        <h4>
+          Actual output
+        </h4>
+        <pre
+          aria-label="Actual output"
+          data-testid="react-result"
+          role="status"
+        >
+          {
+  "status": "Enter a name.",
+  "name": "",
+  "pending": true
+}
+        </pre>
+      </div>
+      <section
+        class="react-trace"
+      >
+        <h3>
+          Observed React events
+        </h3>
+        <p
+          class="muted"
+        >
+          Real effect/commit events, capped at 80 entries. Development StrictMode can add setup and cleanup checks.
+        </p>
+        <button
+          class="secondary"
+        >
+          Clear trace
+        </button>
+        <pre
+          aria-live="polite"
+          data-testid="react-trace"
+          role="log"
+        >
+          No events recorded yet.
+        </pre>
+      </section>
+    </div>
+  </body>
+</html>
+
+- Expected
++ Received
+
+- HTTP 503
++ {
++   "status": "Enter a name.",
++   "name": "",
++   "pending": true
++ }
+
+ ❯ src/modules/react/react-lessons.test.tsx:157:89
+    155|     await waitFor(() => expect(output()).toContain('Enter a name.'));
+    156|     await user.click(control('Action name')); await user.paste('Grace'…
+    157|     expect(output()).toContain('"pending": true'); await waitFor(() =>…
+       |                                                                                         ^
+    158|     await user.clear(control('Action name')); await user.click(control…
+    159|     if ((control('Reject action request') as HTMLInputElement).checked…
+ ❯ runWithExpensiveErrorDiagnosticsDisabled ../node_modules/@testing-library/dom/dist/config.js:47:12
+ ❯ checkCallback ../node_modules/@testing-library/dom/dist/wait-for.js:124:77
+ ❯ Timeout.checkRealTimersCallback ../node_modules/@testing-library/dom/dist/wait-for.js:118:16
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 11 passed (12)
+      Tests  1 failed | 1430 passed (1431)
+   Start at  13:22:06
+   Duration  1389.37s (tests 97%, environment 2%, import 1%, setup 1%)
+
+    Isolate  12 workers spawned · ~2.79s startup each (spawn + environment, per file)
+             at least ~30.72s faster with isolate: false — reuses workers across files instead of one per file
+
+npm error Lifecycle script `test` failed with error:
+npm error code 1
+npm error path E:\ReactNodeFullApp\mern-concept-lab\client
+npm error workspace @mern-concept-lab/client@0.1.0
+npm error location E:\ReactNodeFullApp\mern-concept-lab\client
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c vitest run
+
+
+> @mern-concept-lab/server@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/server
+
+
+ Test Files  6 passed (6)
+      Tests  148 passed (148)
+   Start at  13:45:16
+   Duration  6.53s (tests 51%, import 38%, transform 10%, worker 1%)
+

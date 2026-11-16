@@ -1,0 +1,51 @@
+
+> mern-concept-lab@0.1.0 test
+> npm run check:types && npm run build:playground && npm run test --workspaces
+
+
+> mern-concept-lab@0.1.0 check:types
+> tsx scripts/check-type-examples.ts
+
+Verified 40 TypeScript fixtures, 40 negative cases; diagnostics and source hashes saved.
+
+> mern-concept-lab@0.1.0 build:playground
+> tsx scripts/build-playground.ts
+
+vite v8.3.6 building client environment for production...
+transforming...
+✓ 17 modules transformed.
+rendering chunks...
+computing gzip size...
+client/playground-dist/runtime.js  264.47 kB │ gzip: 84.79 kB
+
+✓ built in 547ms
+Prepared browser-only compiler assets (302 public source/declaration files) and isolated React preview.
+
+> @mern-concept-lab/client@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/client
+
+
+ Test Files  10 passed (10)
+      Tests  985 passed (985)
+   Start at  13:07:40
+   Duration  217.97s (tests 80%, environment 12%, import 3%, setup 3%, transform 2%)
+
+    Isolate  10 workers spawned · ~2.87s startup each (spawn + environment, per file)
+             at least ~25.81s faster with isolate: false — reuses workers across files instead of one per file
+
+
+> @mern-concept-lab/server@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/server
+
+
+ Test Files  4 passed (4)
+      Tests  44 passed (44)
+   Start at  13:11:20
+   Duration  4.14s (tests 52%, import 44%, transform 3%, worker 1%)
+

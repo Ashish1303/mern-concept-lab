@@ -1,0 +1,89 @@
+
+> mern-concept-lab@0.1.0 test
+> npm run check:types && npm run build:playground && npm run test --workspaces
+
+
+> mern-concept-lab@0.1.0 check:types
+> tsx scripts/check-type-examples.ts
+
+Verified 40 TypeScript fixtures, 40 negative cases; diagnostics and source hashes saved.
+
+> mern-concept-lab@0.1.0 build:playground
+> tsx scripts/build-playground.ts
+
+vite v8.3.6 building client environment for production...
+transforming...
+✓ 100 modules transformed.
+rendering chunks...
+computing gzip size...
+client/playground-dist/runtime.js  533.65 kB │ gzip: 169.64 kB
+
+[MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/react-router/dist/production/index.js" may not be preserved when bundling.
+    ╭─[ node_modules/react-router/dist/production/index.js:11:1 ]
+    │
+ 11 │ "use client";
+    │ ──────┬──────  
+    │       ╰──────── module level directive may not be preserved
+    │ 
+    │ Help: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+────╯
+
+✓ built in 563ms
+Prepared browser-only compiler assets (302 public source/declaration files) and isolated React preview.
+
+> @mern-concept-lab/client@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/client
+
+
+ Test Files  13 passed (13)
+      Tests  1719 passed (1719)
+   Start at  15:23:42
+   Duration  137.84s (tests 81%, environment 9%, import 6%, setup 2%, transform 2%)
+
+    Isolate  13 workers spawned · ~2.19s startup each (spawn + environment, per file)
+             at least ~12.03s faster with isolate: false — reuses workers across files instead of one per file
+
+
+> @mern-concept-lab/server@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/server
+
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯⎯⎯ Unhandled Error ⎯⎯⎯⎯⎯⎯⎯
+Error: [vitest-pool]: Worker forks emitted error.
+ ❯ EventEmitter.onTaskError ../node_modules/vitest/dist/chunks/index.Di8au7q4.js:5926:21
+ ❯ EventEmitter.emit node:events:509:28
+ ❯ ChildProcess.emitUnexpectedExit ../node_modules/vitest/dist/chunks/index.Di8au7q4.js:5401:22
+ ❯ ChildProcess.emit node:events:509:28
+ ❯ ChildProcess._handle.onexit node:internal/child_process:295:12
+
+Caused by: Error: Worker exited unexpectedly with exit code 3221226505 during started state while running test file E:/ReactNodeFullApp/mern-concept-lab/server/src/tests/express-lab.test.ts
+ ❯ ChildProcess.emitUnexpectedExit ../node_modules/vitest/dist/chunks/index.Di8au7q4.js:5399:33
+ ❯ ChildProcess.emit node:events:509:28
+ ❯ ChildProcess._handle.onexit node:internal/child_process:295:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+
+ Test Files  8 passed (9)
+      Tests  343 passed (405)
+     Errors  1 error
+   Start at  15:26:02
+   Duration  34.31s (tests 83%, import 14%, transform 2%)
+
+npm error Lifecycle script `test` failed with error:
+npm error code 1
+npm error path E:\ReactNodeFullApp\mern-concept-lab\server
+npm error workspace @mern-concept-lab/server@0.1.0
+npm error location E:\ReactNodeFullApp\mern-concept-lab\server
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c vitest run

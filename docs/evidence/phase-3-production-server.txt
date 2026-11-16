@@ -1,0 +1,9 @@
+
+> mern-concept-lab@0.1.0 start
+> npm start -w server
+
+
+> @mern-concept-lab/server@0.1.0 start
+> node dist/server.js --production
+
+MERN Concept Lab production: http://127.0.0.1:4001

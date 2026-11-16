@@ -1,0 +1,14 @@
+
+> @mern-concept-lab/client@0.1.0 dev
+> vite --host 127.0.0.1
+
+
+  VITE v8.3.6  ready in 2850 ms
+
+  ➜  Local:   http://127.0.0.1:5173/
+1:21:49 pm [vite] (client) hmr update /src/modules/LearningTopicPage.tsx
+1:22:23 pm [vite] (client) hmr update /src/modules/react/ReactExperimentView.tsx
+1:22:23 pm [vite] (client) hmr update /src/modules/node/NodeTopicPage.tsx
+1:22:41 pm [vite] (client) hmr update /src/modules/react/ReactExperimentView.tsx
+1:23:28 pm [vite] (client) hmr update /src/modules/LearningTopicPage.tsx
+1:23:28 pm [vite] (client) hmr update /src/modules/LearningTopicPage.tsx

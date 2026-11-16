@@ -1,0 +1,12 @@
+{
+  "live": "      - status \"Actual output\": \"{ \\\"created\\\": { \\\"_id\\\": \\\"6af97312b73c1da97c58dc38\\\", \\\"title\\\": \\\"New database note\\\", \\\"category\\\": \\\"db\\\", \\\"price\\\": 10, \\\"tags\\\": [ \\\"new\\\" ], \\\"author\\\": \\\"000000000000000000000001\\\", \\\"details\\\": { \\\"pages\\\": 80, \\\"rating\\\": 4 } }, \\\"updated\\\": { \\\"_id\\\": \\\"6af97312b73c1da97c58dc38\\\", \\\"title\\\": \\\"New database note\\\", \\\"category\\\": \\\"db\\\", \\\"price\\\": 25, \\\"tags\\\": [ \\\"new\\\" ], \\\"author\\\": \\\"000000000000000000000001\\\", \\\"details\\\": { \\\"pages\\\": 80, \\\"rating\\\": 4 } }, \\\"deleted\\\": 1, \\\"after\\\": null }\"",
+  "edited": "      - generic \"Snippet output\": \"{ \\\"created\\\": { \\\"_id\\\": \\\"6af97319b73c1da97c58dc3d\\\", \\\"title\\\": \\\"Edited MongoDB note\\\", \\\"category\\\": \\\"db\\\", \\\"price\\\": 10, \\\"tags\\\": [ \\\"new\\\" ], \\\"author\\\": \\\"000000000000000000000001\\\", \\\"details\\\": { \\\"pages\\\": 80, \\\"rating\\\": 4 } }, \\\"updated\\\": { \\\"_id\\\": \\\"6af97319b73c1da97c58dc3d\\\", \\\"title\\\": \\\"Edited MongoDB note\\\", \\\"category\\\": \\\"db\\\", \\\"price\\\": 25, \\\"tags\\\": [ \\\"new\\\" ], \\\"author\\\": \\\"000000000000000000000001\\\", \\\"details\\\": { \\\"pages\\\": 80, \\\"rating\\\": 4 } }, \\\"deleted\\\": 1, \\\"after\\\": null }\"",
+  "syntax": true,
+  "reset": true,
+  "interview": true,
+  "devLogs": [],
+  "refresh": true,
+  "rollback": "      - status \"Actual output\": \"{ \\\"committed\\\": false, \\\"balances\\\": [ { \\\"name\\\": \\\"A\\\", \\\"balance\\\": 50 }, { \\\"name\\\": \\\"B\\\", \\\"balance\\\": 10 } ] }\"",
+  "prodEdited": "      - generic \"Snippet output\": \"{ \\\"committed\\\": true, \\\"balances\\\": [ { \\\"name\\\": \\\"A\\\", \\\"balance\\\": 33 }, { \\\"name\\\": \\\"B\\\", \\\"balance\\\": 27 } ] }\"",
+  "productionLogs": []
+}

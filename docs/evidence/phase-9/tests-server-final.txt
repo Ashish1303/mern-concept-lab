@@ -1,0 +1,13 @@
+
+> @mern-concept-lab/server@0.1.0 test
+> vitest run --maxWorkers=1
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/server
+
+
+ Test Files  9 passed (9)
+      Tests  404 passed (404)
+   Start at  15:05:33
+   Duration  65.06s (tests 84%, import 13%, transform 2%)
+

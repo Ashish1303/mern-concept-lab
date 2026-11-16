@@ -1,0 +1,5 @@
+Original syllabus entries: 494
+Tracked requirement rows: 494
+Distinct stable requirement IDs: 494
+Rows approved with all seven acceptance flags: 494
+Normalized title multiset differences: 0

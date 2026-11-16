@@ -1,0 +1,53 @@
+{
+  "name": "mern-concept-lab",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "engines": {
+    "node": ">=24.15.0 <25"
+  },
+  "overrides": {
+    "minimatch": "11.0.1"
+  },
+  "scripts": {
+    "dev": "npm run build:playground && concurrently -k -n API,WEB \"npm run dev -w server\" \"npm run dev -w client\"",
+    "typecheck": "npm run check:types && tsc -p tsconfig.tools.json && npm run typecheck --workspaces",
+    "lint": "eslint . --max-warnings 0",
+    "test": "npm run check:types && npm run build:playground && npm run test --workspaces",
+    "build": "npm run check:types && npm run build:playground && npm run build --workspaces",
+    "start": "npm start -w server",
+    "check:types": "tsx scripts/check-type-examples.ts",
+    "build:playground": "tsx scripts/build-playground.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@reduxjs/toolkit": "2.14.0",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.8",
+    "@types/express": "5.0.6",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/supertest": "7.2.1",
+    "@vitejs/plugin-react": "6.2.1",
+    "concurrently": "10.0.7",
+    "eslint": "10.14.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
+    "globals": "17.14.0",
+    "jsdom": "31.0.0",
+    "mongoose": "9.12.0",
+    "react-redux": "9.3.1",
+    "supertest": "7.3.2",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "8.3.6",
+    "vitest": "5.1.0"
+  }
+}

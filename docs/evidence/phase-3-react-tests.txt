@@ -1,0 +1,9 @@
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/client
+
+
+ Test Files  1 passed (1)
+      Tests  142 passed (142)
+   Start at  11:49:18
+   Duration  23.41s (tests 89%, environment 6%, import 2%, transform 2%, setup 1%)
+

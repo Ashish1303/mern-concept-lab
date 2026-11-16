@@ -1,0 +1,107 @@
+
+> mern-concept-lab@0.1.0 test
+> npm run check:types && npm run build:playground && npm run test --workspaces
+
+
+> mern-concept-lab@0.1.0 check:types
+> tsx scripts/check-type-examples.ts
+
+Verified 40 TypeScript fixtures, 40 negative cases; diagnostics and source hashes saved.
+
+> mern-concept-lab@0.1.0 build:playground
+> tsx scripts/build-playground.ts
+
+vite v8.3.6 building client environment for production...
+transforming...
+✓ 100 modules transformed.
+rendering chunks...
+computing gzip size...
+client/playground-dist/runtime.js  533.48 kB │ gzip: 169.59 kB
+
+[MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/react-router/dist/production/index.js" may not be preserved when bundling.
+    ╭─[ node_modules/react-router/dist/production/index.js:11:1 ]
+    │
+ 11 │ "use client";
+    │ ──────┬──────  
+    │       ╰──────── module level directive may not be preserved
+    │ 
+    │ Help: For more information, see https://rolldown.rs/in-depth/directives#other-directives
+────╯
+
+✓ built in 1.22s
+Prepared browser-only compiler assets (302 public source/declaration files) and isolated React preview.
+
+> @mern-concept-lab/client@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/client
+
+ ❯ src/modules/LearningRunner.test.tsx (5 tests | 1 failed) 18704ms
+   ❯ Phase 2 lesson UI (3)
+     × runs changed inputs, exposes real source and restores a selected example 10171ms
+ ❯ src/playground/compiler.test.ts (629 tests | 1 failed) 190676ms
+   ❯ all existing lessons have actual editable source (617)
+     × typescript-033.e01: prepares and compiles its actual snippet 30167ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/modules/LearningRunner.test.tsx > Phase 2 lesson UI > runs changed inputs, exposes real source and restores a selected example
+Error: Test timed out in 10000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ src/modules/LearningRunner.test.tsx:12:3
+     10|
+     11| describe('Phase 2 lesson UI', () => {
+     12|   it('runs changed inputs, exposes real source and restores a selected…
+       |   ^
+     13|     const user = userEvent.setup();
+     14|     render(<MemoryRouter initialEntries={['/learn/javascript/javascrip…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  src/playground/compiler.test.ts > all existing lessons have actual editable source > typescript-033.e01: prepares and compiles its actual snippet
+Error: Test timed out in 30000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ src/playground/compiler.test.ts:59:72
+     57| }
+     58| describe('all existing lessons have actual editable source',()=>{
+     59|   for (const lesson of lessons) for (const example of lesson.examples)…
+       |                                                                        ^
+     60|     const loaded=await loadLesson(lesson.id);const definition=language…
+     61|     expect(prepared.code).not.toContain('"questions":');
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  2 failed | 10 passed (12)
+      Tests  2 failed | 1331 passed (1333)
+   Start at  20:16:17
+   Duration  216.91s (tests 70%, environment 19%, setup 4%, import 4%, transform 2%)
+
+    Isolate  12 workers spawned · ~9.52s startup each (spawn + environment, per file)
+             at least ~28.56s faster with isolate: false — reuses workers across files instead of one per file
+
+npm error Lifecycle script `test` failed with error:
+npm error code 1
+npm error path E:\ReactNodeFullApp\mern-concept-lab\client
+npm error workspace @mern-concept-lab/client@0.1.0
+npm error location E:\ReactNodeFullApp\mern-concept-lab\client
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c vitest run
+
+
+> @mern-concept-lab/server@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/server
+
+
+ Test Files  5 passed (5)
+      Tests  48 passed (48)
+   Start at  20:19:57
+   Duration  3.84s (tests 52%, import 39%, transform 7%, worker 1%)
+
+    Isolate  5 workers spawned · ~628ms startup each (spawn + environment, per file)
+             at least ~418ms faster with isolate: false — reuses workers across files instead of one per file
+

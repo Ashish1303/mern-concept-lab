@@ -1,0 +1,17 @@
+
+> mern-concept-lab@0.1.0 typecheck
+> npm run check:types && tsc -p tsconfig.tools.json && npm run typecheck --workspaces
+
+
+> mern-concept-lab@0.1.0 check:types
+> tsx scripts/check-type-examples.ts
+
+Verified 40 TypeScript fixtures, 40 negative cases; diagnostics and source hashes saved.
+
+> @mern-concept-lab/client@0.1.0 typecheck
+> tsc --noEmit
+
+
+> @mern-concept-lab/server@0.1.0 typecheck
+> tsc --noEmit && tsc --noEmit -p tsconfig.test.json
+

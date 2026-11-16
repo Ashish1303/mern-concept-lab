@@ -1,0 +1,9 @@
+JavaScript and TypeScript: 149 lessons, 331 demos, 894 nonempty Q&A entries
+React fundamentals: 46 lessons, 118 demos, 276 nonempty Q&A entries
+Advanced React: 27 lessons, 54 demos, 162 nonempty Q&A entries
+Redux: 42 lessons, 112 demos, 252 nonempty Q&A entries
+Node.js: 46 lessons, 98 demos, 276 nonempty Q&A entries
+Express: 37 lessons, 102 demos, 222 nonempty Q&A entries
+MongoDB and Mongoose: 59 lessons, 139 demos, 354 nonempty Q&A entries
+MERN: 23 lessons, 23 demos, 138 nonempty Q&A entries
+All lesson and interview question IDs are unique.

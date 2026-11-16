@@ -1,0 +1,51 @@
+{
+  "add": [
+    "      - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Read Redux\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\", \\\"Practice selectors\\\" ], \\\"read\\\": 2, \\\"notice\\\": \\\"Saved\\\" }\""
+  ],
+  "rename": [
+    "      - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Updated in production\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\", \\\"Practice selectors\\\" ], \\\"read\\\": 3, \\\"notice\\\": \\\"Saved\\\" }\""
+  ],
+  "delete": [
+    "      - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Try RTK Query\\\", \\\"Review tests\\\", \\\"Practice selectors\\\" ], \\\"read\\\": 4, \\\"notice\\\": \\\"Deleted\\\" }\""
+  ],
+  "refresh": [
+    "      - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Read Redux\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\" ], \\\"read\\\": 1, \\\"notice\\\": \\\"Ready\\\" }\""
+  ],
+  "previewAdd": [
+    "        - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Read Redux\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\", \\\"Practice selectors\\\" ], \\\"read\\\": 2, \\\"notice\\\": \\\"Saved\\\" }\"",
+    "      - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Read Redux\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\" ], \\\"read\\\": 1, \\\"notice\\\": \\\"Ready\\\" }\""
+  ],
+  "previewRename": [
+    "        - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Practice selectors\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\", \\\"Practice selectors\\\" ], \\\"read\\\": 3, \\\"notice\\\": \\\"Saved\\\" }\"",
+    "      - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Read Redux\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\" ], \\\"read\\\": 1, \\\"notice\\\": \\\"Ready\\\" }\""
+  ],
+  "previewDelete": [
+    "        - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Try RTK Query\\\", \\\"Review tests\\\", \\\"Practice selectors\\\" ], \\\"read\\\": 4, \\\"notice\\\": \\\"Deleted\\\" }\"",
+    "      - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Read Redux\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\" ], \\\"read\\\": 1, \\\"notice\\\": \\\"Ready\\\" }\""
+  ],
+  "unauthorized": [
+    "      - status \"Actual output\": \"{ \\\"status\\\": \\\"rejected\\\", \\\"name\\\": { \\\"kind\\\": \\\"undefined\\\" }, \\\"role\\\": { \\\"kind\\\": \\\"undefined\\\" }, \\\"http\\\": 401 }\""
+  ],
+  "authorized": [
+    "      - status \"Actual output\": \"{ \\\"status\\\": \\\"fulfilled\\\", \\\"name\\\": \\\"Ada\\\", \\\"role\\\": \\\"reader\\\", \\\"http\\\": { \\\"kind\\\": \\\"undefined\\\" } }\""
+  ],
+  "previewAuth": [
+    "        - status \"Actual output\": \"{ \\\"status\\\": \\\"fulfilled\\\", \\\"name\\\": \\\"Ada\\\", \\\"role\\\": \\\"reader\\\", \\\"http\\\": { \\\"kind\\\": \\\"undefined\\\" } }\"",
+    "      - status \"Actual output\": \"{ \\\"status\\\": \\\"fulfilled\\\", \\\"name\\\": \\\"Ada\\\", \\\"role\\\": \\\"reader\\\", \\\"http\\\": { \\\"kind\\\": \\\"undefined\\\" } }\""
+  ],
+  "beforeLogout": [
+    "      - status \"Actual output\": \"{ \\\"status\\\": \\\"fulfilled\\\", \\\"name\\\": \\\"Ada\\\", \\\"role\\\": \\\"reader\\\", \\\"http\\\": { \\\"kind\\\": \\\"undefined\\\" } }\""
+  ],
+  "afterLogout": [
+    "      - status \"Actual output\": \"{ \\\"status\\\": \\\"uninitialized\\\", \\\"name\\\": { \\\"kind\\\": \\\"undefined\\\" }, \\\"role\\\": { \\\"kind\\\": \\\"undefined\\\" }, \\\"http\\\": { \\\"kind\\\": \\\"undefined\\\" } }\""
+  ],
+  "console": [],
+  "beforePreviewLogout": [
+    "        - status \"Actual output\": \"{ \\\"status\\\": \\\"fulfilled\\\", \\\"name\\\": \\\"Ada\\\", \\\"role\\\": \\\"reader\\\", \\\"http\\\": { \\\"kind\\\": \\\"undefined\\\" } }\"",
+    "      - status \"Actual output\": \"{ \\\"status\\\": \\\"uninitialized\\\", \\\"name\\\": { \\\"kind\\\": \\\"undefined\\\" }, \\\"role\\\": { \\\"kind\\\": \\\"undefined\\\" }, \\\"http\\\": { \\\"kind\\\": \\\"undefined\\\" } }\""
+  ],
+  "afterPreviewLogout": [
+    "        - status \"Actual output\": \"{ \\\"status\\\": \\\"uninitialized\\\", \\\"name\\\": { \\\"kind\\\": \\\"undefined\\\" }, \\\"role\\\": { \\\"kind\\\": \\\"undefined\\\" }, \\\"http\\\": { \\\"kind\\\": \\\"undefined\\\" } }\"",
+    "      - status \"Actual output\": \"{ \\\"status\\\": \\\"uninitialized\\\", \\\"name\\\": { \\\"kind\\\": \\\"undefined\\\" }, \\\"role\\\": { \\\"kind\\\": \\\"undefined\\\" }, \\\"http\\\": { \\\"kind\\\": \\\"undefined\\\" } }\""
+  ]
+}

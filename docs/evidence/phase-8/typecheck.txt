@@ -1,0 +1,65 @@
+
+> @mern-concept-lab/client@0.1.0 typecheck
+> tsc --noEmit
+
+../server/src/routes/mongo-demos/mongodb-034.ts(11,37): error TS2304: Cannot find name 'book'.
+../server/src/routes/mongo-demos/mongodb-035.ts(10,38): error TS2304: Cannot find name 'book'.
+../server/src/routes/mongo-demos/mongodb-043.ts(7,4): error TS6133: 'db' is declared but its value is never read.
+../server/src/routes/mongo-demos/mongodb-044.ts(12,66): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Object literal may only specify known properties, and 'unmapped' does not exist in type '{ title?: string | RegExp | undefined; category?: RegExp | "web" | "db" | undefined; price?: number | undefined; tags?: string[] | (string | RegExp)[] | undefined; author?: ObjectIdQueryTypeCasting | ... 1 more ... | undefined; createdAt?: DateQueryTypeCasting | undefined; updatedAt?: DateQueryTypeCasting | undefine...'.
+../server/src/routes/mongo-demos/mongodb-044.ts(13,34): error TS2339: Property '_id' does not exist on type 'never'.
+../server/src/routes/mongo-demos/mongodb-046.ts(22,57): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Type 'string' is not assignable to type 'RegExp | "web" | "db" | undefined'.
+../server/src/routes/mongo-demos/mongodb-048.ts(13,66): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Type 'null' is not assignable to type 'number | undefined'.
+../server/src/routes/mongo-demos/mongodb-048.ts(14,57): error TS2339: Property 'price' does not exist on type 'never'.
+../server/src/routes/mongo-demos/mongodb-049.ts(7,60): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Type 'string' is not assignable to type 'number'.
+../server/src/routes/mongo-demos/mongodb-049.ts(8,27): error TS2339: Property 'price' does not exist on type 'never'.
+../server/src/routes/mongo-demos/mongodb-049.ts(8,53): error TS2339: Property 'price' does not exist on type 'never'.
+../server/src/routes/mongo-demos/mongodb-059.ts(14,24): error TS2304: Cannot find name 'book'.
+../server/src/routes/mongo-odm.ts(29,10): error TS2353: Object literal may only specify known properties, and 'timeoutMS' does not exist in type 'TransactionOptions'.
+npm error Lifecycle script `typecheck` failed with error:
+npm error code 2
+npm error path E:\ReactNodeFullApp\mern-concept-lab\client
+npm error workspace @mern-concept-lab/client@0.1.0
+npm error location E:\ReactNodeFullApp\mern-concept-lab\client
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c tsc --noEmit
+
+
+> @mern-concept-lab/server@0.1.0 typecheck
+> tsc --noEmit && tsc --noEmit -p tsconfig.test.json
+
+src/routes/mongo-demos/mongodb-034.ts(11,37): error TS2304: Cannot find name 'book'.
+src/routes/mongo-demos/mongodb-035.ts(10,38): error TS2304: Cannot find name 'book'.
+src/routes/mongo-demos/mongodb-043.ts(7,4): error TS6133: 'db' is declared but its value is never read.
+src/routes/mongo-demos/mongodb-044.ts(12,66): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Object literal may only specify known properties, and 'unmapped' does not exist in type '{ title?: string | RegExp | undefined; category?: RegExp | "web" | "db" | undefined; price?: number | undefined; tags?: string[] | (string | RegExp)[] | undefined; author?: ObjectIdQueryTypeCasting | ... 1 more ... | undefined; createdAt?: DateQueryTypeCasting | undefined; updatedAt?: DateQueryTypeCasting | undefine...'.
+src/routes/mongo-demos/mongodb-044.ts(13,34): error TS2339: Property '_id' does not exist on type 'never'.
+src/routes/mongo-demos/mongodb-046.ts(22,57): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Type 'string' is not assignable to type 'RegExp | "web" | "db" | undefined'.
+src/routes/mongo-demos/mongodb-048.ts(13,66): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Type 'null' is not assignable to type 'number | undefined'.
+src/routes/mongo-demos/mongodb-048.ts(14,57): error TS2339: Property 'price' does not exist on type 'never'.
+src/routes/mongo-demos/mongodb-049.ts(7,60): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Type 'string' is not assignable to type 'number'.
+src/routes/mongo-demos/mongodb-049.ts(8,27): error TS2339: Property 'price' does not exist on type 'never'.
+src/routes/mongo-demos/mongodb-049.ts(8,53): error TS2339: Property 'price' does not exist on type 'never'.
+src/routes/mongo-demos/mongodb-059.ts(14,24): error TS2304: Cannot find name 'book'.
+src/routes/mongo-odm.ts(29,10): error TS2353: Object literal may only specify known properties, and 'timeoutMS' does not exist in type 'TransactionOptions'.
+npm error Lifecycle script `typecheck` failed with error:
+npm error code 2
+npm error path E:\ReactNodeFullApp\mern-concept-lab\server
+npm error workspace @mern-concept-lab/server@0.1.0
+npm error location E:\ReactNodeFullApp\mern-concept-lab\server
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c tsc --noEmit && tsc --noEmit -p tsconfig.test.json

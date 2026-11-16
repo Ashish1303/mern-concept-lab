@@ -1,0 +1,333 @@
+{
+  "checkedAt": "2026-11-08T06:31:56.860Z",
+  "browser": "In-app browser; earlier mandatory state/effect pass used Chrome",
+  "status": "passed",
+  "limitations": [
+    "React Developer Tools label presentation requires that external tool; actual registration/formatter contract is tested.",
+    "Mobile viewport override, not a physical device or cross-browser certification."
+  ],
+  "developmentLogs": [
+    {
+      "level": "error",
+      "message": "%o\n\n%s\n\n%s\n Error: HTTP 503\n    at itemsResponse (http://127.0.0.1:5173/src/modules/helpers.ts:54:26) The above error occurred in the <PromiseReader> component. React will try to recreate this component tree from scratch using the error boundary you provided, LabBoundary.",
+      "timestamp": "2026-11-08T06:19:36.864Z",
+      "url": "http://127.0.0.1:5173/@vite/client"
+    }
+  ],
+  "productionLogs": [],
+  "observations": [
+    {
+      "case": "Revised cancellation",
+      "actual": "{\n  \"status\": \"cancelled\",\n  \"names\": [],\n  \"error\": \"Request cancelled.\"\n}"
+    },
+    {
+      "case": "Browser narrow geometry",
+      "actual": "{\n  \"width\": 160,\n  \"wide\": false\n}"
+    },
+    {
+      "case": "Browser wide geometry",
+      "actual": "{\n  \"width\": 260,\n  \"wide\": true\n}"
+    },
+    {
+      "case": "Production inserted CSS",
+      "trace": "[\n  {\n    \"sequence\": 1,\n    \"event\": \"style observed in layout\",\n    \"value\": {\n      \"installed\": true,\n      \"color\": \"rgb(20, 100, 60)\"\n    }\n  },\n  {\n    \"sequence\": 2,\n    \"event\": \"style observed in layout\",\n    \"value\": {\n      \"installed\": true,\n      \"color\": \"rgb(110, 40, 140)\"\n    }\n  }\n]",
+      "dom": {
+        "color": "rgb(110, 40, 140)",
+        "note": "The remote DOM representation did not expose the nonce property. The actual layout callback below verifies nonce equality."
+      }
+    },
+    {
+      "case": "Two inserted styles",
+      "count": 2
+    },
+    {
+      "case": "Independent style cleanup",
+      "actual": "{\n  \"rules\": 1\n}"
+    },
+    {
+      "case": "All style owners unmounted",
+      "remaining": 0
+    },
+    {
+      "case": "Form Action acknowledged",
+      "actual": "{\n  \"status\": \"acknowledged\",\n  \"name\": \"Ada\",\n  \"pending\": false\n}"
+    },
+    {
+      "case": "Form Action HTTP failure",
+      "actual": "{\n  \"status\": \"HTTP 503: acknowledgement rejected.\",\n  \"name\": \"\",\n  \"pending\": false\n}"
+    },
+    {
+      "case": "Form Action recovery",
+      "actual": "{\n  \"status\": \"acknowledged\",\n  \"name\": \"Grace\",\n  \"pending\": false\n}"
+    },
+    {
+      "case": "Queued Actions",
+      "actual": "{\n  \"total\": 3,\n  \"error\": \"\",\n  \"pending\": false\n}"
+    },
+    {
+      "case": "Optimistic item pending",
+      "actual": "{\n  \"items\": [\n    {\n      \"id\": 1,\n      \"name\": \"Ada\",\n      \"pending\": true\n    }\n  ],\n  \"confirmed\": 0,\n  \"pending\": true,\n  \"error\": \"\"\n}"
+    },
+    {
+      "case": "Optimistic item confirmed",
+      "actual": "{\n  \"items\": [\n    {\n      \"id\": 1,\n      \"name\": \"Ada\",\n      \"pending\": false\n    }\n  ],\n  \"confirmed\": 1,\n  \"pending\": false,\n  \"error\": \"\"\n}"
+    },
+    {
+      "case": "Second tentative item",
+      "actual": "{\n  \"items\": [\n    {\n      \"id\": 1,\n      \"name\": \"Ada\",\n      \"pending\": false\n    },\n    {\n      \"id\": 2,\n      \"name\": \"Ada\",\n      \"pending\": true\n    }\n  ],\n  \"confirmed\": 1,\n  \"pending\": true,\n  \"error\": \"\"\n}"
+    },
+    {
+      "case": "Optimistic rejection rollback",
+      "actual": "{\n  \"items\": [\n    {\n      \"id\": 1,\n      \"name\": \"Ada\",\n      \"pending\": false\n    }\n  ],\n  \"confirmed\": 1,\n  \"pending\": false,\n  \"error\": \"HTTP 503: acknowledgement rejected.\"\n}"
+    },
+    {
+      "case": "Optimistic rebase during pending",
+      "actual": "{\n  \"base\": 10,\n  \"optimistic\": 11,\n  \"pending\": true,\n  \"error\": \"\"\n}"
+    },
+    {
+      "case": "Rebase rejection preserves base",
+      "actual": "{\n  \"base\": 10,\n  \"optimistic\": 10,\n  \"pending\": false,\n  \"error\": \"HTTP 503: acknowledgement rejected.\"\n}"
+    },
+    {
+      "case": "Effect Event latest count without subscription",
+      "trace": "[\n  {\n    \"sequence\": 4,\n    \"event\": \"latest effect event\",\n    \"value\": {\n      \"count\": 1,\n      \"theme\": \"light\",\n      \"room\": \"A\",\n      \"muted\": false,\n      \"notified\": true\n    }\n  }\n]"
+    },
+    {
+      "case": "Effect Event latest theme",
+      "trace": "[\n  {\n    \"sequence\": 4,\n    \"event\": \"latest effect event\",\n    \"value\": {\n      \"count\": 0,\n      \"theme\": \"dark\",\n      \"room\": \"A\",\n      \"muted\": false,\n      \"notified\": true\n    }\n  }\n]"
+    },
+    {
+      "case": "Effect Event reactive room retained",
+      "trace": "[\n  {\n    \"sequence\": 4,\n    \"event\": \"channel unsubscribe\",\n    \"value\": \"A\"\n  },\n  {\n    \"sequence\": 5,\n    \"event\": \"channel subscribe\",\n    \"value\": \"B\"\n  },\n  {\n    \"sequence\": 6,\n    \"event\": \"latest effect event\",\n    \"value\": {\n      \"count\": 0,\n      \"theme\": \"dark\",\n      \"room\": \"B\",\n      \"muted\": false,\n      \"notified\": true\n    }\n  }\n]"
+    },
+    {
+      "case": "Effect Event bounded timer",
+      "actual": "{\n  \"count\": 10,\n  \"stepSize\": 2,\n  \"running\": true\n}",
+      "beforeFix": true
+    },
+    {
+      "case": "Effect Event timer cleanup",
+      "trace": "[\n  {\n    \"sequence\": 1,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 2,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 3,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 4,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 5,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 6,\n    \"event\": \"effect-event timer cleanup\"\n  }\n]"
+    },
+    {
+      "case": "Effect Event mute",
+      "trace": "[\n  {\n    \"sequence\": 1,\n    \"event\": \"channel subscribe\",\n    \"value\": \"A\"\n  },\n  {\n    \"sequence\": 2,\n    \"event\": \"channel unsubscribe\",\n    \"value\": \"A\"\n  },\n  {\n    \"sequence\": 3,\n    \"event\": \"channel subscribe\",\n    \"value\": \"A\"\n  },\n  {\n    \"sequence\": 4,\n    \"event\": \"latest effect event\",\n    \"value\": {\n      \"count\": 0,\n      \"theme\": \"light\",\n      \"room\": \"A\",\n      \"muted\": true,\n      \"notified\": false\n    }\n  }\n]"
+    },
+    {
+      "case": "Conditional use context",
+      "actual": "{\n  \"value\": \"provided\"\n}"
+    },
+    {
+      "case": "Stable use Promise real request",
+      "actual": "{\n  \"names\": [\n    \"Ada\",\n    \"Grace\",\n    \"Linus\"\n  ]\n}"
+    },
+    {
+      "case": "Rejected use Promise boundary",
+      "alert": "HTTP 503 Reset the example or load another resource to recover."
+    },
+    {
+      "case": "New stable resource recovers",
+      "actual": "{\n  \"names\": [\n    \"Ada\",\n    \"Grace\",\n    \"Linus\"\n  ]\n}"
+    },
+    {
+      "case": "Urgent input and transition",
+      "actual": "{\n  \"text\": \"Ada\",\n  \"query\": \"Ada\",\n  \"pending\": false\n}",
+      "trace": "[\n  {\n    \"sequence\": 1,\n    \"event\": \"filtered list commit\",\n    \"value\": {\n      \"query\": \"\",\n      \"count\": 800\n    }\n  },\n  {\n    \"sequence\": 2,\n    \"event\": \"transition commit\",\n    \"value\": {\n      \"text\": \"\",\n      \"query\": \"\",\n      \"pending\": false\n    }\n  },\n  {\n    \"sequence\": 3,\n    \"event\": \"filtered list commit\",\n    \"value\": {\n      \"query\": \"\",\n      \"count\": 800\n    }\n  },\n  {\n    \"sequence\": 4,\n    \"event\": \"transition commit\",\n    \"value\": {\n      \"text\": \"\",\n      \"query\": \"\",\n      \"pending\": false\n    }\n  },\n  {\n    \"sequence\": 5,\n    \"event\": \"transition commit\",\n    \"value\": {\n      \"text\": \"Ada\",\n      \"query\": \"\",\n      \"pending\": true\n    }\n  },\n  {\n    \"sequence\": 6,\n    \"event\": \"filtered list commit\",\n    \"value\": {\n      \"query\": \"Ada\",\n      \"count\": 400\n    }\n  },\n  {\n    \"sequence\": 7,\n    \"event\": \"transition commit\",\n    \"value\": {\n      \"text\": \"Ada\",\n      \"query\": \"Ada\",\n      \"pending\": false\n    }\n  }\n]"
+    },
+    {
+      "case": "Async transition actual API",
+      "actual": "{\n  \"name\": \"Ada\",\n  \"pending\": false,\n  \"error\": \"\"\n}"
+    },
+    {
+      "case": "Deferred search catches up",
+      "actual": "{\n  \"query\": \"Grace\",\n  \"deferred\": \"Grace\",\n  \"stale\": false\n}",
+      "trace": "[\n  {\n    \"sequence\": 1,\n    \"event\": \"filtered list commit\",\n    \"value\": {\n      \"query\": \"\",\n      \"count\": 800\n    }\n  },\n  {\n    \"sequence\": 2,\n    \"event\": \"deferred commit\",\n    \"value\": {\n      \"query\": \"\",\n      \"deferred\": \"\"\n    }\n  },\n  {\n    \"sequence\": 3,\n    \"event\": \"filtered list commit\",\n    \"value\": {\n      \"query\": \"\",\n      \"count\": 800\n    }\n  },\n  {\n    \"sequence\": 4,\n    \"event\": \"deferred commit\",\n    \"value\": {\n      \"query\": \"\",\n      \"deferred\": \"\"\n    }\n  },\n  {\n    \"sequence\": 5,\n    \"event\": \"deferred commit\",\n    \"value\": {\n      \"query\": \"Grace\",\n      \"deferred\": \"\"\n    }\n  },\n  {\n    \"sequence\": 6,\n    \"event\": \"filtered list commit\",\n    \"value\": {\n      \"query\": \"Grace\",\n      \"count\": 400\n    }\n  },\n  {\n    \"sequence\": 7,\n    \"event\": \"deferred commit\",\n    \"value\": {\n      \"query\": \"Grace\",\n      \"deferred\": \"Grace\"\n    }\n  }\n]"
+    },
+    {
+      "case": "Initial deferred value trace",
+      "trace": "[\n  {\n    \"sequence\": 1,\n    \"event\": \"filtered list commit\",\n    \"value\": {\n      \"query\": \"\",\n      \"count\": 800\n    }\n  },\n  {\n    \"sequence\": 2,\n    \"event\": \"initial deferred commit\",\n    \"value\": {\n      \"query\": \"Ada\",\n      \"deferred\": \"\"\n    }\n  },\n  {\n    \"sequence\": 3,\n    \"event\": \"filtered list commit\",\n    \"value\": {\n      \"query\": \"\",\n      \"count\": 800\n    }\n  },\n  {\n    \"sequence\": 4,\n    \"event\": \"initial deferred commit\",\n    \"value\": {\n      \"query\": \"Ada\",\n      \"deferred\": \"\"\n    }\n  },\n  {\n    \"sequence\": 5,\n    \"event\": \"filtered list commit\",\n    \"value\": {\n      \"query\": \"Ada\",\n      \"count\": 400\n    }\n  },\n  {\n    \"sequence\": 6,\n    \"event\": \"initial deferred commit\",\n    \"value\": {\n      \"query\": \"Ada\",\n      \"deferred\": \"Ada\"\n    }\n  },\n  {\n    \"sequence\": 7,\n    \"event\": \"initial deferred commit\",\n    \"value\": {\n      \"query\": \"Grace\",\n      \"deferred\": \"Ada\"\n    }\n  },\n  {\n    \"sequence\": 8,\n    \"event\": \"filtered list commit\",\n    \"value\": {\n      \"query\": \"Grace\",\n      \"count\": 400\n    }\n  },\n  {\n    \"sequence\": 9,\n    \"event\": \"initial deferred commit\",\n    \"value\": {\n      \"query\": \"Grace\",\n      \"deferred\": \"Grace\"\n    }\n  }\n]"
+    },
+    {
+      "case": "DebugValue real hook state with honest DevTools prerequisite",
+      "actual": "{\n  \"count\": 1\n}"
+    },
+    {
+      "case": "DebugValue formatter hook state",
+      "actual": "{\n  \"count\": 1\n}"
+    },
+    {
+      "case": "External store two subscribers",
+      "actual": [
+        "{\n  \"count\": 1\n}",
+        "{\n  \"count\": 1\n}",
+        "{\n  \"subscriptions\": null\n}"
+      ]
+    },
+    {
+      "case": "External store unsubscribe",
+      "actual": [
+        "{\n  \"count\": 1\n}",
+        "{\n  \"subscriptions\": 1\n}"
+      ]
+    },
+    {
+      "case": "Real viewport snapshot",
+      "actual": "{\n  \"width\": 1280\n}"
+    },
+    {
+      "case": "Resize subscription native browser",
+      "actual": "{\n  \"width\": 1280\n}",
+      "note": "This initial override affected the selected production tab. Accepted resize evidence is Production resize external snapshot."
+    },
+    {
+      "case": "Custom hook independent state",
+      "actual": "{\n  \"first\": 1,\n  \"second\": 0\n}"
+    },
+    {
+      "case": "Custom hook actual Escape keyboard",
+      "actual": "{\n  \"open\": false\n}"
+    },
+    {
+      "case": "Context shared readers",
+      "actual": [
+        "{\n  \"label\": \"First\",\n  \"theme\": \"dark\"\n}",
+        "{\n  \"label\": \"Second\",\n  \"theme\": \"dark\"\n}"
+      ]
+    },
+    {
+      "case": "Reducer dispatch",
+      "actual": "{\n  \"count\": 1\n}"
+    },
+    {
+      "case": "Ref native focus",
+      "actual": "{\n  \"focused\": true\n}",
+      "focused": "<input>"
+    },
+    {
+      "case": "Memo child actual skipped commit",
+      "trace": "[\n  {\n    \"sequence\": 5,\n    \"event\": \"Fresh commit\",\n    \"value\": {\n      \"values\": 1\n    }\n  }\n]"
+    },
+    {
+      "case": "Callback memoized child identity",
+      "trace": "[\n  {\n    \"sequence\": 5,\n    \"event\": \"Fresh callback commit\"\n  }\n]"
+    },
+    {
+      "case": "Imperative handle read and focus",
+      "actual": "{\n  \"read\": \"Ada\"\n}",
+      "focused": "<input maxlength=\"40\">"
+    },
+    {
+      "case": "useId distinct associated fields",
+      "ids": [
+        "_r_1_",
+        "_r_2_"
+      ]
+    },
+    {
+      "case": "Production nonce confirmed by actual layout callback",
+      "trace": "[\n  {\n    \"sequence\": 1,\n    \"event\": \"style observed in layout\",\n    \"value\": {\n      \"installed\": true,\n      \"color\": \"rgb(20, 100, 60)\",\n      \"nonceRequired\": true,\n      \"nonceMatchesPage\": true\n    }\n  }\n]"
+    },
+    {
+      "case": "Production resize external snapshot",
+      "actual": "{\n  \"width\": 390\n}"
+    },
+    {
+      "case": "Mobile drawer keyboard open",
+      "expanded": "true"
+    },
+    {
+      "case": "Mobile selection closes drawer",
+      "closedButtonVisible": true,
+      "url": "http://127.0.0.1:4001/learn/react/react-027"
+    },
+    {
+      "case": "Mobile keyboard state queue",
+      "actual": "{\n  \"count\": 3\n}",
+      "overflow": {
+        "document": 375,
+        "viewport": 375
+      }
+    },
+    {
+      "case": "Production alias direct refresh",
+      "url": "http://127.0.0.1:4001/learn/react/react-028?example=react-059.e01&q=effect",
+      "title": "Request cancellation",
+      "search": "effect"
+    },
+    {
+      "case": "Production StrictMode no development replay",
+      "trace": "[\n  {\n    \"sequence\": 1,\n    \"event\": \"Plain setup\"\n  },\n  {\n    \"sequence\": 2,\n    \"event\": \"Strict setup\"\n  }\n]"
+    },
+    {
+      "case": "Production back preserves alias and search",
+      "url": "http://127.0.0.1:4001/learn/react/react-028?example=react-059.e01&q=effect",
+      "heading": "Request cancellation"
+    },
+    {
+      "case": "Production forward preserves example",
+      "url": "http://127.0.0.1:4001/learn/react/react-028?example=react-028.e14&q=effect",
+      "heading": "StrictMode behavior"
+    },
+    {
+      "case": "Fixed interval native restart",
+      "actual": "{\n  \"ticks\": 5,\n  \"running\": false\n}",
+      "trace": "[\n  {\n    \"sequence\": 1,\n    \"event\": \"interval tick\",\n    \"value\": 1\n  },\n  {\n    \"sequence\": 2,\n    \"event\": \"interval tick\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 3,\n    \"event\": \"interval tick\",\n    \"value\": 3\n  },\n  {\n    \"sequence\": 4,\n    \"event\": \"interval tick\",\n    \"value\": 4\n  },\n  {\n    \"sequence\": 5,\n    \"event\": \"interval tick\",\n    \"value\": 5\n  },\n  {\n    \"sequence\": 6,\n    \"event\": \"interval cleanup\"\n  },\n  {\n    \"sequence\": 7,\n    \"event\": \"interval tick\",\n    \"value\": 1\n  },\n  {\n    \"sequence\": 8,\n    \"event\": \"interval tick\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 9,\n    \"event\": \"interval tick\",\n    \"value\": 3\n  },\n  {\n    \"sequence\": 10,\n    \"event\": \"interval tick\",\n    \"value\": 4\n  },\n  {\n    \"sequence\": 11,\n    \"event\": \"interval tick\",\n    \"value\": 5\n  },\n  {\n    \"sequence\": 12,\n    \"event\": \"interval cleanup\"\n  }\n]"
+    },
+    {
+      "case": "Fixed Effect Event timer native restart",
+      "actual": "{\n  \"count\": 20,\n  \"stepSize\": 2,\n  \"running\": false\n}",
+      "trace": "[\n  {\n    \"sequence\": 1,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 2,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 3,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 4,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 5,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 6,\n    \"event\": \"effect-event timer cleanup\"\n  },\n  {\n    \"sequence\": 7,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 8,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 9,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 10,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 11,\n    \"event\": \"latest timer increment\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 12,\n    \"event\": \"effect-event timer cleanup\"\n  }\n]"
+    },
+    {
+      "case": "Controller reset remounts real state",
+      "actual": "{\n  \"count\": 0\n}"
+    },
+    {
+      "case": "Production actual read-only source",
+      "hasFunctionalUpdates": true,
+      "editableSourceControls": 0
+    },
+    {
+      "case": "Native accessible disclosure via keyboard",
+      "expanded": "true"
+    },
+    {
+      "case": "Accessible validation native focus and relationship",
+      "invalid": "true",
+      "describedBy": "_r_1_-help",
+      "focused": "<input id=\"_r_1_\" maxlength=\"40\" aria-invalid=\"true\" aria-describedby=\"_r_1_-help\" value=\"\">",
+      "error": "Enter a name."
+    },
+    {
+      "case": "Accessible validation recovery",
+      "actual": "{\n  \"error\": false,\n  \"name\": \"Ada\"\n}"
+    },
+    {
+      "case": "Fresh development console after fixes",
+      "logs": []
+    },
+    {
+      "case": "Rebuilt production review status",
+      "status": "READY FOR REVIEW"
+    },
+    {
+      "case": "Final built interval restart",
+      "actual": "{\n  \"ticks\": 5,\n  \"running\": false\n}",
+      "trace": "[\n  {\n    \"sequence\": 1,\n    \"event\": \"interval tick\",\n    \"value\": 1\n  },\n  {\n    \"sequence\": 2,\n    \"event\": \"interval tick\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 3,\n    \"event\": \"interval tick\",\n    \"value\": 3\n  },\n  {\n    \"sequence\": 4,\n    \"event\": \"interval tick\",\n    \"value\": 4\n  },\n  {\n    \"sequence\": 5,\n    \"event\": \"interval tick\",\n    \"value\": 5\n  },\n  {\n    \"sequence\": 6,\n    \"event\": \"interval cleanup\"\n  },\n  {\n    \"sequence\": 7,\n    \"event\": \"interval tick\",\n    \"value\": 1\n  },\n  {\n    \"sequence\": 8,\n    \"event\": \"interval tick\",\n    \"value\": 2\n  },\n  {\n    \"sequence\": 9,\n    \"event\": \"interval tick\",\n    \"value\": 3\n  },\n  {\n    \"sequence\": 10,\n    \"event\": \"interval tick\",\n    \"value\": 4\n  },\n  {\n    \"sequence\": 11,\n    \"event\": \"interval tick\",\n    \"value\": 5\n  },\n  {\n    \"sequence\": 12,\n    \"event\": \"interval cleanup\"\n  }\n]"
+    },
+    {
+      "case": "Final built Effect Event timer stop",
+      "actual": "{\n  \"count\": 5,\n  \"stepSize\": 1,\n  \"running\": false\n}"
+    },
+    {
+      "case": "Final built CSS/nonce",
+      "trace": "[\n  {\n    \"sequence\": 1,\n    \"event\": \"style observed in layout\",\n    \"value\": {\n      \"installed\": true,\n      \"color\": \"rgb(20, 100, 60)\",\n      \"nonceRequired\": true,\n      \"nonceMatchesPage\": true\n    }\n  },\n  {\n    \"sequence\": 2,\n    \"event\": \"style observed in layout\",\n    \"value\": {\n      \"installed\": true,\n      \"color\": \"rgb(110, 40, 140)\",\n      \"nonceRequired\": true,\n      \"nonceMatchesPage\": true\n    }\n  }\n]",
+      "status": "READY FOR REVIEW"
+    },
+    {
+      "case": "Final built mobile keyboard",
+      "actual": "{\n  \"count\": 3\n}",
+      "horizontalOverflow": false
+    }
+  ]
+}

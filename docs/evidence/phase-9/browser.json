@@ -1,0 +1,19 @@
+{
+  "created": "      - status \"Actual output\": \"{ \\\"created\\\": { \\\"title\\\": \\\"CRUD sample item\\\", \\\"category\\\": \\\"lab\\\", \\\"_id\\\": \\\"6af97a038c0eff7da51f6e03\\\", \\\"__v\\\": 0 }, \\\"readBack\\\": { \\\"rows\\\": [ { \\\"_id\\\": \\\"6af97a038c0eff7da51f6e03\\\", \\\"title\\\": \\\"CRUD sample item\\\", \\\"category\\\": \\\"lab\\\", \\\"__v\\\": 0 } ], \\\"total\\\": 1, \\\"page\\\": 1, \\\"pageSize\\\": 2 } }\"",
+  "updated": "      - status \"Actual output\": \"{ \\\"updated\\\": { \\\"_id\\\": \\\"6af97a038c0eff7da51f6e03\\\", \\\"title\\\": \\\"Updated full-stack item\\\", \\\"category\\\": \\\"lab\\\", \\\"__v\\\": 0 } }\"",
+  "deleted": "      - status \"Actual output\": \"{ \\\"deleted\\\": \\\"Updated full-stack item\\\", \\\"remainingMatches\\\": 0 }\"",
+  "edit": "        - status \"Actual output\": \"{ \\\"created\\\": { \\\"title\\\": \\\"Edited MERN item\\\", \\\"category\\\": \\\"lab\\\", \\\"_id\\\": \\\"6af97a168c0eff7da51f6e07\\\", \\\"__v\\\": 0 }, \\\"readBack\\\": { \\\"rows\\\": [ { \\\"_id\\\": \\\"6af97a168c0eff7da51f6e07\\\", \\\"title\\\": \\\"Edited MERN item\\\", \\\"category\\\": \\\"lab\\\", \\\"__v\\\": 0 } ], \\\"total\\\": 1, \\\"page\\\": 1, \\\"pageSize\\\": 2 } }\"",
+  "previewDelete": "        - status \"Actual output\": \"{ \\\"deleted\\\": \\\"Edited MERN item\\\", \\\"remainingMatches\\\": 0 }\"",
+  "syntax": true,
+  "reset": true,
+  "interview": true,
+  "refresh": true,
+  "devLogs": [],
+  "optimistic": "      - status \"Actual output\": \"{ \\\"status\\\": \\\"fulfilled\\\", \\\"rows\\\": [ \\\"A proposed title\\\", \\\"Mongo Notes\\\" ], \\\"total\\\": 3, \\\"notice\\\": \\\"Saving…\\\" }\"",
+  "rolledBack": "      - status \"Actual output\": \"{ \\\"status\\\": \\\"fulfilled\\\", \\\"rows\\\": [ \\\"Express Guide\\\", \\\"Mongo Notes\\\" ], \\\"total\\\": 3, \\\"notice\\\": \\\"Write rejected. Restoring the previous cached title.\\\" }\"",
+  "rotated": "        - status \"Actual output\": \"{ \\\"rotated\\\": true, \\\"profile\\\": { \\\"username\\\": \\\"refresh-reader\\\", \\\"role\\\": \\\"reader\\\", \\\"signed\\\": true } }\"",
+  "oldRefresh": "        - status \"Actual output\": \"\\\"401 That refresh value is expired or already used.\\\"\"",
+  "production": "      - status \"Actual output\": \"{ \\\"databaseReady\\\": true, \\\"runtime\\\": \\\"24.15.0\\\", \\\"mode\\\": \\\"production\\\" }\"",
+  "prodUpload": "        - status \"Actual output\": \"{ \\\"bytes\\\": 26, \\\"text\\\": \\\"Production preview fixture\\\", \\\"persisted\\\": true }\"",
+  "prodLogs": []
+}

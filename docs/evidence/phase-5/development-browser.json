@@ -1,0 +1,48 @@
+{
+  "initial": [
+    "      - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Read Redux\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\" ], \\\"read\\\": 1, \\\"notice\\\": \\\"Ready\\\" }\""
+  ],
+  "optimistic": [
+    "      - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Practice selectors\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\" ], \\\"read\\\": 1, \\\"notice\\\": \\\"Saving\\\" }\""
+  ],
+  "rollback": [
+    "      - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Read Redux\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\" ], \\\"read\\\": 1, \\\"notice\\\": \\\"Rolled back (409)\\\" }\""
+  ],
+  "previewOptimistic": [
+    "        - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Practice selectors\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\" ], \\\"read\\\": 1, \\\"notice\\\": \\\"Saving\\\" }\"",
+    "      - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Read Redux\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\" ], \\\"read\\\": 1, \\\"notice\\\": \\\"Rolled back (409)\\\" }\""
+  ],
+  "previewRollback": [
+    "        - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Read Redux\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\" ], \\\"read\\\": 1, \\\"notice\\\": \\\"Rolled back (409)\\\" }\"",
+    "      - status \"Actual output\": \"{ \\\"titles\\\": [ \\\"Read Redux\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\" ], \\\"read\\\": 1, \\\"notice\\\": \\\"Rolled back (409)\\\" }\""
+  ],
+  "rollbackConsole": [],
+  "local": [
+    "      - status \"Actual output\": \"{ \\\"value\\\": 4, \\\"note\\\": \\\"\\\" }\""
+  ],
+  "editedLocal": [
+    "        - status \"Actual output\": \"{ \\\"value\\\": 14, \\\"note\\\": \\\"\\\" }\"",
+    "      - status \"Actual output\": \"\\\"Ready\\\"\""
+  ],
+  "error": [
+    "        - strong: Snippet error",
+    "        - generic: \"redux-004.tsx:1:37 TS1005: ':' expected. redux-004.tsx:1:38 TS1005: ')' expected.\""
+  ],
+  "reset": true,
+  "mobile": {
+    "document": 375,
+    "viewport": 390
+  },
+  "console": [],
+  "beforeLogout": [
+    "      - status \"Actual output\": \"{ \\\"status\\\": \\\"fulfilled\\\", \\\"name\\\": \\\"Ada\\\", \\\"role\\\": \\\"reader\\\", \\\"http\\\": { \\\"kind\\\": \\\"undefined\\\" } }\""
+  ],
+  "afterLogout": [
+    "      - status \"Actual output\": \"{ \\\"status\\\": \\\"uninitialized\\\", \\\"name\\\": { \\\"kind\\\": \\\"undefined\\\" }, \\\"role\\\": { \\\"kind\\\": \\\"undefined\\\" }, \\\"http\\\": { \\\"kind\\\": \\\"undefined\\\" } }\""
+  ],
+  "interview": true,
+  "deduplication": [
+    "      - status \"Actual output\": \"{ \\\"status\\\": \\\"fulfilled\\\", \\\"fetching\\\": false, \\\"titles\\\": [ \\\"Read Redux\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\" ], \\\"read\\\": 1, \\\"total\\\": 3, \\\"error\\\": { \\\"kind\\\": \\\"undefined\\\" } }\"",
+    "      - status \"Actual output\": \"{ \\\"status\\\": \\\"fulfilled\\\", \\\"fetching\\\": false, \\\"titles\\\": [ \\\"Read Redux\\\", \\\"Try RTK Query\\\", \\\"Review tests\\\" ], \\\"read\\\": 1, \\\"total\\\": 3, \\\"error\\\": { \\\"kind\\\": \\\"undefined\\\" } }\""
+  ]
+}

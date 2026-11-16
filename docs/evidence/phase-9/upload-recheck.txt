@@ -1,0 +1,78 @@
+
+> @mern-concept-lab/client@0.1.0 test
+> vitest run src/modules/mern/mern-scenarios.test.tsx -t mern-016
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/client
+
+ ❯ src/modules/mern/mern-scenarios.test.tsx (24 tests | 1 failed | 23 skipped) 5264ms
+   ❯ Phase 9 React against the real Express and MongoDB stack (24)
+     × mern-016 File uploads 5197ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/modules/mern/mern-scenarios.test.tsx > Phase 9 React against the real Express and MongoDB stack > mern-016 File uploads
+AssertionError: expected '"400 Malformed multipart data." "400 …' to contain 'persisted'
+
+Ignored nodes: comments, script, style
+<html>
+  <head />
+  <body>
+    <div>
+      <label>
+        Generated file text 
+        <input
+          maxlength="120"
+          value="MERN upload sample"
+        />
+      </label>
+      <button>
+        Upload generated text file
+      </button>
+      <div
+        class="actual-output"
+      >
+        <h4>
+          Actual output
+        </h4>
+        <pre
+          aria-label="Actual output"
+          data-testid="react-result"
+          role="status"
+        >
+          "400 Malformed multipart data."
+        </pre>
+      </div>
+    </div>
+  </body>
+</html>
+
+Expected: "persisted"
+Received: ""400 Malformed multipart data." "400 Malformed multipart data.""
+
+ ❯ timeout src/modules/mern/mern-scenarios.test.tsx:80:26
+     78|           const output = [...screen.queryAllByRole('status'), ...scree…
+     79|             .map(element => element.textContent).join(' ');
+     80|           expect(output).toContain(expected);
+       |                          ^
+     81|         }, { timeout: 3500 });
+     82|       }
+ ❯ runWithExpensiveErrorDiagnosticsDisabled ../node_modules/@testing-library/dom/dist/config.js:47:12
+ ❯ checkCallback ../node_modules/@testing-library/dom/dist/wait-for.js:124:77
+ ❯ Timeout.checkRealTimersCallback ../node_modules/@testing-library/dom/dist/wait-for.js:118:16
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 23 skipped (24)
+   Start at  14:55:56
+   Duration  16.99s (tests 32%, import 28%, environment 22%, transform 10%, setup 7%)
+
+npm error Lifecycle script `test` failed with error:
+npm error code 1
+npm error path E:\ReactNodeFullApp\mern-concept-lab\client
+npm error workspace @mern-concept-lab/client@0.1.0
+npm error location E:\ReactNodeFullApp\mern-concept-lab\client
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c vitest run src/modules/mern/mern-scenarios.test.tsx -t mern-016

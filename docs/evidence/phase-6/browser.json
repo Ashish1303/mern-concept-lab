@@ -1,0 +1,25 @@
+{
+  "base": [
+    "      - status \"Actual output\": \"{ \\\"codeUnits\\\": 4, \\\"bytes\\\": 5, \\\"hex\\\": \\\"636166c3a9\\\" }\""
+  ],
+  "edit": [
+    "      - generic \"Snippet output\": \"{ \\\"codeUnits\\\": 1, \\\"bytes\\\": 3, \\\"hex\\\": \\\"e29895\\\" }\""
+  ],
+  "error": [
+    "        - strong: Snippet error",
+    "        - generic: \"example.ts:2:8 TS1005: ':' expected. example.ts:2:20 TS1005: ',' expected. example.ts:2:21 TS1005: '}' expected.\""
+  ],
+  "reset": true,
+  "direct": [
+    "      - status \"Actual output\": \"{ \\\"original\\\": [ 1, 9, 3 ], \\\"view\\\": [ 9, 3 ] }\""
+  ],
+  "interview": true,
+  "developmentConsole": [],
+  "production": [
+    "      - status \"Actual output\": \"{ \\\"message\\\": \\\"مرحبا\\\", \\\"transport\\\": \\\"WebSocket\\\" }\""
+  ],
+  "productionEdited": [
+    "      - generic \"Snippet output\": \"{ \\\"message\\\": \\\"Edited socket message\\\", \\\"transport\\\": \\\"WebSocket\\\" }\""
+  ],
+  "productionConsole": []
+}

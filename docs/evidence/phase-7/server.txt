@@ -1,0 +1,6 @@
+
+> @mern-concept-lab/server@0.1.0 dev
+> tsx watch src/server.ts
+
+Edited snippets: http://127.0.0.2:4001
+MERN Concept Lab development: http://127.0.0.1:4000

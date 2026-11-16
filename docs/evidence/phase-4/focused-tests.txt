@@ -1,0 +1,17 @@
+
+> @mern-concept-lab/client@0.1.0 test
+> vitest run src/modules/react/advanced-lessons.test.tsx src/app/registry.test.ts
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/client
+
+
+ Test Files  2 passed (2)
+      Tests  68 passed (68)
+   Start at  19:45:04
+   Duration  16.31s (tests 55%, environment 26%, import 8%, setup 7%, transform 3%)
+
+Environment  jsdom was created 2 times · 3.98s total, 26% of tracked time
+             create it once per worker with pool: 'vmThreads' (keeps per-file isolation) or isolate: false (shares it across files)
+             learn more: https://vitest.dev/guide/improving-performance#test-environments
+

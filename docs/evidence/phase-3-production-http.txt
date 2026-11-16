@@ -1,0 +1,31 @@
+[
+  {
+    "path": "/learn/react/react-027?example=react-064.e01",
+    "status": 200,
+    "nonceMatched": true
+  },
+  {
+    "path": "/learn/react/react-028?example=react-059.e01",
+    "status": 200,
+    "nonceMatched": true
+  },
+  {
+    "path": "/learn/react/react-041",
+    "status": 200,
+    "nonceMatched": true
+  },
+  {
+    "path": "/index.html",
+    "status": 200,
+    "nonceMatched": true
+  },
+  {
+    "checkedAt": "2026-11-08T06:32:29.748Z",
+    "productionAPI": true,
+    "acknowledgement": true,
+    "controlled503": true,
+    "actualRequestAbort": true,
+    "apiAsset404JSON": true,
+    "testChunksAbsent": true
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "@mern-concept-lab/server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.test.json",
+    "test": "vitest run",
+    "build": "tsc",
+    "start": "node dist/server.js --production"
+  },
+  "dependencies": {
+    "express": "5.3.0",
+    "mongoose": "9.12.0"
+  }
+}

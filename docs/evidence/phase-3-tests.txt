@@ -1,0 +1,38 @@
+
+> mern-concept-lab@0.1.0 test
+> npm run check:types && npm run test --workspaces
+
+
+> mern-concept-lab@0.1.0 check:types
+> tsx scripts/check-type-examples.ts
+
+Verified 40 TypeScript fixtures, 40 negative cases; diagnostics and source hashes saved.
+
+> @mern-concept-lab/client@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/client
+
+
+ Test Files  8 passed (8)
+      Tests  514 passed (514)
+   Start at  11:57:35
+   Duration  109.22s (tests 62%, environment 22%, setup 7%, import 6%, transform 3%)
+
+    Isolate  8 workers spawned · ~3.38s startup each (spawn + environment, per file)
+             at least ~23.64s faster with isolate: false — reuses workers across files instead of one per file
+
+
+> @mern-concept-lab/server@0.1.0 test
+> vitest run
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/server
+
+
+ Test Files  3 passed (3)
+      Tests  37 passed (37)
+   Start at  11:59:26
+   Duration  2.74s (tests 60%, import 35%, transform 4%, worker 2%)
+

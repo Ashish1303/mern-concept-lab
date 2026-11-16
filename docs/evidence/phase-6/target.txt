@@ -1,0 +1,13 @@
+
+> @mern-concept-lab/server@0.1.0 test
+> vitest run src/tests/node-lab.test.ts
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/server
+
+
+ Test Files  1 passed (1)
+      Tests  100 passed (100)
+   Start at  13:19:45
+   Duration  18.47s (tests 87%, import 9%, transform 4%)
+

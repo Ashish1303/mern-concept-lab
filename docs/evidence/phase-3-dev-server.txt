@@ -1,0 +1,33 @@
+
+> mern-concept-lab@0.1.0 dev
+> concurrently -k -n API,WEB "npm run dev -w server" "npm run dev -w client"
+
+[WEB] 
+[WEB] > @mern-concept-lab/client@0.1.0 dev
+[WEB] > vite --host 127.0.0.1
+[WEB] 
+[API] 
+[API] > @mern-concept-lab/server@0.1.0 dev
+[API] > tsx watch src/server.ts
+[API] 
+[WEB] 
+[WEB]   VITE v8.3.6  ready in 1120 ms
+[WEB] 
+[WEB]   ➜  Local:   http://127.0.0.1:5173/
+[API] MERN Concept Lab development: http://127.0.0.1:4000
+[WEB] 11:46:04 am [vite] (client) hmr update /src/modules/react/react-041.tsx, /src/modules/react/ReactTopicPage.tsx
+[WEB] 11:46:39 am [vite] (client) hmr update /src/modules/LearningTopicPage.tsx
+[WEB] 11:48:46 am [vite] (client) hmr update /src/modules/react/react-044.tsx, /src/modules/react/ReactTopicPage.tsx
+[WEB] 11:49:09 am [vite] (client) hmr update /src/modules/react/react-028.tsx, /src/modules/react/ReactTopicPage.tsx
+[WEB] 11:49:36 am [vite] (client) [console.error] Error: HTTP 503
+[WEB]     at itemsResponse (http://127.0.0.1:5173/src/modules/helpers.ts:54:26)
+[WEB] 
+[WEB] The above error occurred in the <PromiseReader> component.
+[WEB] 
+[WEB] React will try to recreate this component tree from scratch using the error boundary you provided, LabBoundary.
+[WEB] 
+[WEB] 11:55:24 am [vite] (client) hmr update /src/app/App.tsx, /src/components/layout/Sidebar.tsx, /src/routes/TopicPage.tsx
+[WEB] 11:55:24 am [vite] (client) hmr update /src/modules/react/ReactTopicPage.tsx
+[WEB] 11:56:00 am [vite] (client) hmr update /src/modules/LearningTopicPage.tsx
+[WEB] 11:57:32 am [vite] (client) hmr update /src/modules/LearningTopicPage.tsx
+[WEB] 11:59:55 am [vite] (client) hmr update /src/modules/LearningTopicPage.tsx

@@ -1,0 +1,20 @@
+Editable snippets enhancement — final verification, 2026-11-08
+Status: READY_FOR_REVIEW. Explicit approval required before Phase 4.
+Scope: 451 editors (449 existing curriculum examples plus 2 foundation checks).
+Execution: 411 browser/React previews and 40 real TypeScript compiler exercises.
+Source: selected actual functions, required imports/helpers and editable support files.
+Controls: Run, Reset, Stop, separate output/errors, original demos and interview questions retained.
+TypeScript: PASS (compiler fixtures, tools, client, server and test types).
+Lint: PASS (zero warnings).
+Tests: PASS — 1,029 total (985 client across 10 files, 44 server across 4 files).
+Coverage: all editor definitions, all 291 transpiled language defaults, 40 positive/negative compiler fixtures, existing 118 component examples, editor lifecycle and preview policy.
+Build: PASS; separate lazy compiler Worker and preview runtime; no test chunks in app assets.
+Audit: PASS — zero known vulnerabilities; dependency versions unchanged.
+Production HTTP: PASS — app/alias routes, preview origin/CSP, assets, actual API and no server-code execution endpoint.
+Browser: PASS — 37 observations saved, including changed outputs, type corrections, useEffect/helper edits, errors, isolation, stop/reset/deadline, foundation API, storage policy, refresh/search, keyboard/mobile.
+Browser diagnostics: no unexpected warnings/errors in final reviewed sessions.
+Limits: runtime TSX transpiles syntax; semantic checks use compiler exercises. Browser cross-site cookie policy can report Cookie unavailable. First compiler initialization can take several seconds.
+Screenshots: snippets-desktop.jpg and snippets-mobile.jpg.
+Temporary app/API/preview listeners stopped; verified closed in snippets-ports.txt.
+No database operation, external publication, Git repository or commit.
+Phase 4: NOT_STARTED; await approval.

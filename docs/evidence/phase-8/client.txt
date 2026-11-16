@@ -1,0 +1,15 @@
+
+> @mern-concept-lab/client@0.1.0 dev
+> vite --host 127.0.0.1
+
+2:22:13 pm [vite] (client) Re-optimizing dependencies because lockfile has changed
+
+  VITE v8.3.6  ready in 1863 ms
+
+  ➜  Local:   http://127.0.0.1:5173/
+2:22:15 pm [vite] (client) [optimizer] scanning dependencies...
+2:22:17 pm [vite] (client) [optimizer] bundling dependencies...
+2:23:23 pm [vite] (client) [optimizer] bundling dependencies...
+2:23:27 pm [vite] (client) dependency optimized: typescript
+2:23:27 pm [vite] (client) optimized dependencies changed. reloading
+2:23:41 pm [vite] (client) hmr update /src/modules/LearningTopicPage.tsx

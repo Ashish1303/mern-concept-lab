@@ -1,0 +1,31 @@
+{
+  "before": [
+    "- status \"Actual output\": \"\\\"Home is ready\\\"\""
+  ],
+  "after": [
+    "- status \"Actual output\": \"\\\"Report loaded\\\"\""
+  ],
+  "invoice": [
+    "- status \"Actual output\": \"44\""
+  ],
+  "refresh": true,
+  "profile": [
+    "      - status \"Counter\": \"1\"",
+    "      - log: \"[ { \\\"sequence\\\": 2, \\\"event\\\": \\\"Counter.commit\\\", \\\"value\\\": 1 } ]\""
+  ],
+  "apiFailure": [
+    "- status \"Actual output\": \"\\\"PASS: API failure handled\\\"\""
+  ],
+  "refreshResult": [
+    "- status \"Actual output\": \"\\\"PASS: API failure handled\\\"\""
+  ],
+  "portal": {
+    "nested": true,
+    "text": "Actual output\"In the portal target\"Close portal"
+  },
+  "reduxPreview": [
+    "- status \"Actual output\": \"{ \\\"quantity\\\": 1 }\"",
+    "- status \"Actual output\": \"{ \\\"quantity\\\": 0 }\""
+  ],
+  "console": []
+}

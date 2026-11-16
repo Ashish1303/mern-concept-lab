@@ -1,0 +1,13 @@
+
+> @mern-concept-lab/client@0.1.0 test
+> vitest run src/playground/compiler.test.ts -t typescript-033.e01
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/client
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 628 skipped (629)
+   Start at  20:20:19
+   Duration  24.03s (tests 67%, environment 11%, import 10%, transform 9%, setup 3%)
+

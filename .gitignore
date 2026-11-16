@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+uploads/
+.lab/
+test-results/
+playwright-report/
+
+
+client/playground-dist/
+client/public/playground/

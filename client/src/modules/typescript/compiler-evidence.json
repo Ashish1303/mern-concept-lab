@@ -1,0 +1,456 @@
+{
+  "compiler": "6.0.3",
+  "checkedAt": "2026-11-15T09:58:04.477Z",
+  "fixtures": {
+    "typescript/fixtures/typescript-001.e01.ts": {
+      "sha256": "0cbd4658b86b9e8e706f55b5ffbd836636e453ebfe170b3c78b76b3248b9195b",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 3,
+          "message": "Type 'string' is not assignable to type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-002.e01.ts": {
+      "sha256": "1bb1b74c9e7cd28193a948a17444fec757c16f5edffd2cbc884c0f78384c380b",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2345,
+          "line": 3,
+          "message": "Argument of type 'string' is not assignable to parameter of type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-003.e01.ts": {
+      "sha256": "0f4d77f5a76cac1bc9b90ab932ce9b57b17b2ae8280091134491cd2d93b7aa2b",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2741,
+          "line": 4,
+          "message": "Property 'active' is missing in type '{ name: string; }' but required in type 'User'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-004.e01.ts": {
+      "sha256": "35a7eb4d7d438d99647f4e9f000bb96ec26053139f16551ff412697e264b2cec",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 4,
+          "message": "Type 'boolean' is not assignable to type 'Identifier'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-005.e01.ts": {
+      "sha256": "9f65355b4591afc9b3c26fef4017ee0bded5de3ed85504bb0cc83886f29afe21",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2339,
+          "line": 4,
+          "message": "Property 'toUpperCase' does not exist on type 'string | number'.\n  Property 'toUpperCase' does not exist on type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-006.e01.ts": {
+      "sha256": "133c095f96d1a65606cd1a418fa56d2b4f0de070d8d5b030653e32c55e0871dc",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 4,
+          "message": "Type '{ name: string; }' is not assignable to type 'AuditedUser'.\n  Property 'createdAt' is missing in type '{ name: string; }' but required in type '{ createdAt: string; }'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-007.e01.ts": {
+      "sha256": "9cf1ee940cab117bd9365584647c45623055a5906fa12132fefaf8bdb05fe607",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2820,
+          "line": 4,
+          "message": "Type '\"raedy\"' is not assignable to type 'Status'. Did you mean '\"ready\"'?"
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-008.e01.ts": {
+      "sha256": "367bbd1e07935ed220e2f9a2c1df0e9f182e8d4918b49200d1c2984cbfb02557",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 18048,
+          "line": 5,
+          "message": "'user.city' is possibly 'undefined'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-009.e01.ts": {
+      "sha256": "a47fc9df60d52b3c83afd7d7ec28f24812a127fe3f3c1075ee85d4acd1d4e86e",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2540,
+          "line": 3,
+          "message": "Cannot assign to 'retries' because it is a read-only property."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-010.e01.ts": {
+      "sha256": "457551bc0ba1060aa5cd701f9b9c70886d7043fd7ec0bc16ec957242e8800cdf",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 3,
+          "message": "Type 'number' is not assignable to type 'string'."
+        },
+        {
+          "code": 2322,
+          "line": 3,
+          "message": "Type 'string' is not assignable to type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-011.e01.ts": {
+      "sha256": "c48a5d860c12164796c156296b20c81fd5e116f979935392222a06490d88aa56",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 5,
+          "message": "Type '\"other\"' is not assignable to type 'StatusValue'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-012.e01.ts": {
+      "sha256": "bfa4fd3a67ab991986dd82a4d9a7501f170d2e30beb9cdb630361d2302128b43",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2345,
+          "line": 4,
+          "message": "Argument of type 'string' is not assignable to parameter of type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-013.e01.ts": {
+      "sha256": "df23e2abc61669b290d6250c1400a2d946fcacd4740264d773a371ecac44dfd4",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2769,
+          "line": 6,
+          "message": "No overload matches this call.\n  Overload 1 of 2, '(value: string): number', gave the following error.\n    Argument of type 'boolean' is not assignable to parameter of type 'string'.\n  Overload 2 of 2, '(value: number): string', gave the following error.\n    Argument of type 'boolean' is not assignable to parameter of type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-014.e01.ts": {
+      "sha256": "2925c2086662e9bb296057a0457b7291b68cbc26132e8b2de297c8b1dae2088b",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 4,
+          "message": "Type 'number' is not assignable to type 'string'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-015.e01.ts": {
+      "sha256": "2e9b761587157edc5de701c50f0e31c99cae9de9d07d4a064f0c7afcc96d30d0",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2345,
+          "line": 4,
+          "message": "Argument of type 'number' is not assignable to parameter of type '{ length: number; }'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-016.e01.ts": {
+      "sha256": "f5fdd097f55d69b2283376d10d565c0549800936e6a1c76f7c07e04d1ba8afae",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2345,
+          "line": 4,
+          "message": "Argument of type '\"nmae\"' is not assignable to parameter of type '\"name\"'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-017.e01.ts": {
+      "sha256": "d1d51d9399a0291300afea3b6fe984e3ac4289829fd7b04a15d8e46280799228",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 5,
+          "message": "Type 'string' is not assignable to type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-018.e01.ts": {
+      "sha256": "737c3a5c2f70bac0674a1fef26dbb84f54124ecbfd0ab43e98f67134da2da703",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 6,
+          "message": "Type 'number' is not assignable to type 'string'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-019.e01.ts": {
+      "sha256": "4ad672688cc8d4c8e02e0c46c59687a6b3bb3006ca7d95bf485dafb9b2be92a4",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 5,
+          "message": "Type 'string' is not assignable to type 'boolean'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-020.e01.ts": {
+      "sha256": "5f725038f3155c161933e300157bf88e9252ccb991615d40819e0f6e8069709f",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 4,
+          "message": "Type 'string' is not assignable to type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-021.e01.ts": {
+      "sha256": "85c962d11624ce92c80ef5a3cbb778b2506047bd8790d413cd18190b18c9649e",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2339,
+          "line": 14,
+          "message": "Property 'id' does not exist on type 'Pick<User, \"name\">'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-022.e01.ts": {
+      "sha256": "b8091f1eaf69291f9b1fa43a943bae41f8b23b136d694d57cbb8906c7386480c",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 18046,
+          "line": 6,
+          "message": "'value' is of type 'unknown'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-023.e01.ts": {
+      "sha256": "4c82d502c6e625015063564320f0b708c53f2c14ac0d5ac2f6137a7356dd50c7",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2339,
+          "line": 4,
+          "message": "Property 'toUpperCase' does not exist on type 'string | number'.\n  Property 'toUpperCase' does not exist on type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-024.e01.ts": {
+      "sha256": "8c466fac74998ea57d5b6706d9e0f48387aa9d50325bbac8f7b71fd95e249124",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2339,
+          "line": 6,
+          "message": "Property 'value' does not exist on type 'State'.\n  Property 'value' does not exist on type '{ kind: \"loading\"; }'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-025.e01.ts": {
+      "sha256": "d0b1d2f8d958a3914c4cc0bc9aeb7d15efb51c2457af04abd0b93e6918a28a7b",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 18046,
+          "line": 8,
+          "message": "'value' is of type 'unknown'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-026.e01.ts": {
+      "sha256": "c125773ce9ca416cc8b2d4374b45e5db0a1f0cbcf18bdc35dcc00a1c6107b157",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 6,
+          "message": "Type 'unknown' is not assignable to type 'User'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-027.e01.ts": {
+      "sha256": "08a227367ea67e22cd07bb1f044086c69c0b00f8d9771c05a98d0730bae95fbf",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2341,
+          "line": 4,
+          "message": "Property 'balance' is private and only accessible within class 'Account'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-028.e01.ts": {
+      "sha256": "69211bf0e8a58bd6a1b5cf413f230fcada9054ae7e17f3ba7298c907d580cfa0",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 4,
+          "message": "Type 'Promise<string>' is not assignable to type 'Promise<number>'.\n  Type 'string' is not assignable to type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-028.e03.ts": {
+      "sha256": "dc2c71b69a9f997460db0433454873041d145d6cff0cb583b92d4724d94252cf",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 18046,
+          "line": 4,
+          "message": "'error' is of type 'unknown'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-028.e04.ts": {
+      "sha256": "e98a081d509880a73ac53610042d7c8eb363d1022b51ff9c7e760974d5e53988",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 4,
+          "message": "Type 'Promise<number>' is not assignable to type 'Promise<string>'.\n  Type 'number' is not assignable to type 'string'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-028.e05.ts": {
+      "sha256": "70239f6e242995c908e977e0f8cb96923d29b616ce0a88a6120579d8a223f328",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 5,
+          "message": "Type 'string' is not assignable to type 'number'."
+        },
+        {
+          "code": 2322,
+          "line": 5,
+          "message": "Type 'number' is not assignable to type 'string'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-029.e01.ts": {
+      "sha256": "8754d05fdc8035d319481ad3ce465e619efa5a734c5318bef11b5e761ff69ef5",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2339,
+          "line": 5,
+          "message": "Property 'data' does not exist on type 'ApiResult<{ name: string; }>'.\n  Property 'data' does not exist on type '{ ok: false; error: string; }'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-031.e01.ts": {
+      "sha256": "9ea094a71c4f5e41a42b5b3349e7b0b1c405e8762044fe593e2f48ebfc59eb9d",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2345,
+          "line": 11,
+          "message": "Argument of type 'string' is not assignable to parameter of type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-032.e01.ts": {
+      "sha256": "7451369ac434f723b738277dad1310009893068791024f102f824e8c8657178e",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 5,
+          "message": "Type 'string' is not assignable to type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-033.e01.ts": {
+      "sha256": "2428154eb06285edad356e2b63482d50aac25364cfaa99d31b98af62147442be",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 8,
+          "message": "Type 'number' is not assignable to type 'string'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-033.e02.ts": {
+      "sha256": "d6fa3b18050c1cc3c44cbc88d64c6fbc3596381b80a80b150dac9227e1c121fc",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 9,
+          "message": "Type 'string' is not assignable to type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-034.e01.ts": {
+      "sha256": "a1beec6234273a148890c91160e9aea0c0f5c166ff8160ca9a6622268ae98220",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 5,
+          "message": "Type 'unknown' is not assignable to type 'User'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-035.e01.ts": {
+      "sha256": "1b197ecebf381391c451b179a78e956bd0cea232a2ddee918a0536c3d6b2a740",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2322,
+          "line": 4,
+          "message": "Type 'number | undefined' is not assignable to type 'number'.\n  Type 'undefined' is not assignable to type 'number'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-035.e02.ts": {
+      "sha256": "d43102502dd5f88f3bbcf18708e812397abad08ce1a33d8def0941f5f05208a6",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2375,
+          "line": 4,
+          "message": "Type '{ label: undefined; }' is not assignable to type 'Settings' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.\n  Types of property 'label' are incompatible.\n    Type 'undefined' is not assignable to type 'string'."
+        }
+      ]
+    },
+    "typescript/fixtures/typescript-030.e01.tsx": {
+      "sha256": "9ae6cb1e4430426218dd37e267d8108cca414a1c37ec2b156af3be9aaeaa6dad",
+      "positive": "passed",
+      "negative": [
+        {
+          "code": 2345,
+          "line": 6,
+          "message": "Argument of type 'string' is not assignable to parameter of type 'SetStateAction<number>'."
+        }
+      ]
+    }
+  }
+}

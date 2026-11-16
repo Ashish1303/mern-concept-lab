@@ -1,0 +1,16 @@
+
+> @mern-concept-lab/client@0.1.0 test
+> vitest run src/modules/react/redux-lessons.test.tsx src/app/registry.test.ts
+
+
+ RUN  v5.1.0 E:/ReactNodeFullApp/mern-concept-lab/client
+
+
+ Test Files  2 passed (2)
+      Tests  121 passed (121)
+   Start at  20:04:59
+   Duration  35.70s (tests 77%, environment 16%, setup 4%, transform 2%, import 1%)
+
+    Isolate  2 workers spawned · ~3.23s startup each (spawn + environment, per file)
+             at least ~3.23s faster with isolate: false — reuses workers across files instead of one per file
+

@@ -1,0 +1,178 @@
+{
+  "checkedAt": "2026-11-08T07:51:33.852Z",
+  "status": "passed",
+  "browser": "In-app browser",
+  "developmentLogs": [],
+  "productionLogs": [],
+  "limitations": [
+    "Preview cookie availability follows the browser cross-site cookie policy.",
+    "Runtime TSX is transpiled; compiler fixtures provide full semantic type checks.",
+    "Compiler initialization can take several seconds on first load; the reference demo stays available.",
+    "Mobile viewport override, not physical-device or cross-browser certification."
+  ],
+  "observations": [
+    {
+      "case": "Edited React executes changed increment",
+      "edited": "{\n  \"count\": 5\n}",
+      "reference": "{\n  \"count\": 0\n}"
+    },
+    {
+      "case": "Syntax error output",
+      "error": "Snippet error\nreact-027.tsx:1:37 TS1005: ':' expected.\nreact-027.tsx:1:38 TS1005: '}' expected."
+    },
+    {
+      "case": "Runtime error output",
+      "error": "Snippet error\nedited failure"
+    },
+    {
+      "case": "Bounded loop error",
+      "error": "Snippet error\nExecution stopped: the snippet exceeded its loop or recursion budget."
+    },
+    {
+      "case": "Reset restores original code and removes preview",
+      "hasOriginal": true,
+      "frames": 0
+    },
+    {
+      "case": "Compiler fixture actual semantic error",
+      "error": "Snippet error\ntypescript-001.e01.ts:3:14 TS2322: Type 'string' is not assignable to type 'number'."
+    },
+    {
+      "case": "Corrected TypeScript passes real checking",
+      "output": "Type check passed. No TypeScript errors. This compiler fixture was not executed."
+    },
+    {
+      "case": "Changed TypeScript assignment rejected",
+      "error": "Snippet error\ntypescript-001.e01.ts:1:14 TS2322: Type 'string' is not assignable to type 'number'."
+    },
+    {
+      "case": "Edited JavaScript produces new result",
+      "output": "Running…",
+      "stage": "intermediate loading observation"
+    },
+    {
+      "case": "Edited JavaScript final output",
+      "output": "42"
+    },
+    {
+      "case": "Edited runtime uses actual Express data",
+      "output": "[\n  \"Ada\",\n  \"Grace\",\n  \"Linus\"\n]"
+    },
+    {
+      "case": "useEffect code visible by default",
+      "hasEffect": false,
+      "code": "",
+      "stage": "read before initial preparation completed; subsequent prepared-code observation is authoritative"
+    },
+    {
+      "case": "Prepared useEffect visible code",
+      "hasEffect": true
+    },
+    {
+      "case": "Edited effect setup actually runs",
+      "trace": "[\n  {\n    \"sequence\": 1,\n    \"event\": \"edited effect setup\"\n  }\n]"
+    },
+    {
+      "case": "Stop removes active React preview",
+      "frames": 0
+    },
+    {
+      "case": "Thin wrapper opens actual useEffect helper",
+      "file": "modules/react/EffectRace.tsx",
+      "hasEffect": true
+    },
+    {
+      "case": "Edited helper and real network execute together",
+      "output": "{\n  \"run\": 1,\n  \"unchecked\": \"Ada\",\n  \"guarded\": \"edited Grace\"\n}"
+    },
+    {
+      "case": "Production edited React executes",
+      "edited": "{\n  \"count\": 5\n}",
+      "reference": "{\n  \"count\": 0\n}",
+      "output": "Preview mounted. Use its controls above."
+    },
+    {
+      "case": "Preview cannot read the application document",
+      "error": "Snippet error\nFailed to read a named property 'document' from 'Window': Blocked a frame with origin \"http://127.0.0.2:4101\" from accessing a cross-origin frame."
+    },
+    {
+      "case": "Actual isolated localStorage round trip",
+      "output": "{\n  \"storedType\": \"string\",\n  \"parsed\": {\n    \"label\": \"MERN\"\n  }\n}"
+    },
+    {
+      "case": "Isolated cookie example respects browser policy",
+      "output": "\"Cookie unavailable\""
+    },
+    {
+      "case": "Existing typed Redux store snippet executes",
+      "output": "1"
+    },
+    {
+      "case": "Foundation component also editable and runnable",
+      "preview": "1 clicks recorded"
+    },
+    {
+      "case": "Foundation preview uses real health API",
+      "preview": "{\n  \"ok\": true,\n  \"data\": {\n    \"service\": \"MERN Concept Lab API\",\n    \"status\": \"healthy\",\n    \"database\": {\n      \"status\": \"not_configured\",\n      \"requiredForPhase\": 5\n    },\n    \"timestamp\": \"2026-11-08T07:09:56.792Z\"\n  },\n  \"requestId\": \"c6c30a90-6fa6-4d36-89f0-bd0a84b2f33e\"\n}"
+    },
+    {
+      "case": "Stop cancels a pending runtime run",
+      "frames": 0,
+      "status": "Stopped."
+    },
+    {
+      "case": "Runtime promise deadline enforced",
+      "error": "Snippet error\nExecution stopped after three seconds. Resolve or return from the snippet, then run again."
+    },
+    {
+      "case": "Searching preserves the current draft",
+      "code": "function example1() { return 99; }",
+      "url": "http://127.0.0.1:4100/learn/javascript/javascript-021?q=closure"
+    },
+    {
+      "case": "Run searched draft",
+      "output": "99"
+    },
+    {
+      "case": "New example loads its own code",
+      "code": "function example2() {\n  function account() { let balance = 0; return { add: () => ++balance, read: () => balance }; }\n  const item = account(); item.add(); item.add(); return item.read();\n}"
+    },
+    {
+      "case": "Production refresh preserves topic/example search URL",
+      "url": "http://127.0.0.1:4100/learn/javascript/javascript-021?q=closure",
+      "interviewHeading": "Interview questions"
+    },
+    {
+      "case": "Final pure result is compact",
+      "output": "42",
+      "frames": 0
+    },
+    {
+      "case": "Final built editable counter",
+      "edited": "{\n  \"count\": 5\n}",
+      "reference": "{\n  \"count\": 0\n}"
+    },
+    {
+      "case": "Mobile keyboard runs edited code",
+      "output": "{\n  \"count\": 5\n}",
+      "horizontalOverflow": false
+    },
+    {
+      "case": "Mobile drawer remains keyboard accessible",
+      "expanded": "true"
+    },
+    {
+      "case": "Final production compiler reports actual fixture errors",
+      "error": "Snippet error\ntypescript-001.e01.ts:3:14 TS2322: Type 'string' is not assignable to type 'number'."
+    },
+    {
+      "case": "Final production semantic correction passes",
+      "output": "Type check passed. No TypeScript errors. This compiler fixture was not executed."
+    },
+    {
+      "case": "Latest production bundle executes edited code",
+      "edited": "{\n  \"count\": 5\n}",
+      "reference": "{\n  \"count\": 0\n}"
+    }
+  ]
+}

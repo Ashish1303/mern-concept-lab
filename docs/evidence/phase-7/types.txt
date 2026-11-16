@@ -1,0 +1,25 @@
+
+> @mern-concept-lab/client@0.1.0 typecheck
+> tsc --noEmit
+
+../server/src/routes/express-demos/express-008.ts(1,10): error TS6133: 'api' is declared but its value is never read.
+npm error Lifecycle script `typecheck` failed with error:
+npm error code 2
+npm error path E:\ReactNodeFullApp\mern-concept-lab\client
+npm error workspace @mern-concept-lab/client@0.1.0
+npm error location E:\ReactNodeFullApp\mern-concept-lab\client
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c tsc --noEmit
+
+
+> @mern-concept-lab/server@0.1.0 typecheck
+> tsc --noEmit && tsc --noEmit -p tsconfig.test.json
+
+src/routes/express-demos/express-008.ts(1,10): error TS6133: 'api' is declared but its value is never read.
+npm error Lifecycle script `typecheck` failed with error:
+npm error code 2
+npm error path E:\ReactNodeFullApp\mern-concept-lab\server
+npm error workspace @mern-concept-lab/server@0.1.0
+npm error location E:\ReactNodeFullApp\mern-concept-lab\server
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c tsc --noEmit && tsc --noEmit -p tsconfig.test.json
